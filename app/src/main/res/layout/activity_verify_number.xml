@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyNumber">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tv_verify_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Phone"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_70sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code is sent to 9104429451"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_verify_phone"
+        app:layout_constraintStart_toStartOf="@+id/tv_verify_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify_phone" />
+
+  <!--  <EditText
+        android:id="@+id/et_1"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:digits="1"
+        android:backgroundTint="@drawable/otpbk"
+        android:inputType="number"
+       android:layout_marginStart="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num" />
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:digits="1"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:inputType="number"
+        android:backgroundTint="@drawable/otpbk"
+        app:layout_constraintBottom_toBottomOf="@+id/et_1"
+        app:layout_constraintStart_toEndOf="@+id/et_1"
+        app:layout_constraintTop_toTopOf="@+id/et_1" />
+
+    <EditText
+        android:id="@+id/et_3"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:digits="1"
+        android:inputType="number"
+        android:backgroundTint="@drawable/otpbk"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_2"
+        app:layout_constraintStart_toEndOf="@+id/et_2"
+        app:layout_constraintTop_toTopOf="@+id/et_2" />
+
+    <EditText
+        android:id="@+id/et_4"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:digits="1"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:inputType="number"
+        android:backgroundTint="@drawable/otpbk"
+        app:layout_constraintBottom_toBottomOf="@+id/et_2"
+        app:layout_constraintStart_toEndOf="@+id/et_3"
+        app:layout_constraintTop_toTopOf="@+id/et_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_5"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:digits="1"
+        android:inputType="number"
+        android:backgroundTint="@drawable/otpbk"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_2"
+        app:layout_constraintStart_toEndOf="@+id/et_4"
+        app:layout_constraintTop_toTopOf="@+id/et_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_6"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:digits="1"
+        android:inputType="number"
+        android:backgroundTint="@drawable/otpbk"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_2"
+        app:layout_constraintStart_toEndOf="@+id/et_5"
+        app:layout_constraintTop_toTopOf="@+id/et_2"
+        app:layout_constraintVertical_bias="0.0" />-->
+
+    <Button
+        android:id="@+id/btn_verify_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="VERIFY AND CONTINUE"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="@+id/et_otp"
+        app:layout_constraintStart_toStartOf="@+id/et_otp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dont_rv" />
+
+    <!--<androidx.compose.ui.platform.ComposeView
+        android:id="@+id/otp_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="225dp" />-->
+
+    <com.chaos.view.PinView
+        android:id="@+id/et_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:inputType="text"
+        android:itemBackground="@drawable/rc9"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_num"
+        app:lineColor="@color/black"
+        app:lineWidth="2dp"
+        app:viewType="rectangle"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <TextView
+        android:id="@+id/tv_dont_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Didn’t receive the code?"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@+id/et_otp"
+        app:layout_constraintTop_toBottomOf="@+id/et_otp" />
+
+    <TextView
+        android:id="@+id/tv_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Request Again"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_dont_rv"
+        app:layout_constraintStart_toEndOf="@+id/tv_dont_rv"
+        app:layout_constraintTop_toTopOf="@+id/tv_dont_rv" />
+
+    <!-- <EditText
+         android:id="@+id/et_otp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="textPersonName"
+         app:layout_constraintBottom_toTopOf="@+id/btn_verify_continue"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/tv_num" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

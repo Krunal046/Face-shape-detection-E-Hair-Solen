@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_salon"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_salon"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hairslondemo" />
+
+            <TextView
+                android:id="@+id/tv_salon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bomb Shell"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/iv_salon"
+                app:layout_constraintTop_toTopOf="@+id/iv_salon" />
+
+            <TextView
+                android:id="@+id/tv_salon_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunfarma Road,Vadodara"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_price"
+                app:layout_constraintStart_toStartOf="@+id/tv_salon_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_salon_name" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/Gray"
+                app:layout_constraintBottom_toTopOf="@+id/tv_ambience_rating"
+                app:layout_constraintEnd_toEndOf="@+id/ima_location"
+                app:layout_constraintStart_toStartOf="@+id/tv_salon_area" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="0.5"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_salon"
+                app:layout_constraintStart_toStartOf="@+id/tv_salon_area" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Green"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:text="8/10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/rb_rating"
+                app:layout_constraintEnd_toEndOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tv_ambience_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMBIENCE RATING"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toTopOf="@+id/rb_rating"
+                app:layout_constraintStart_toStartOf="@+id/rb_rating" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Reviews"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/Green"
+                app:layout_constraintBottom_toBottomOf="@+id/rb_rating"
+                app:layout_constraintEnd_toEndOf="@+id/tv_rating"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rating"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ima_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_location_on_18" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.6 km"
+                android:textSize="@dimen/_6ssp"
+                app:layout_constraintEnd_toEndOf="@+id/ima_location"
+                app:layout_constraintTop_toBottomOf="@+id/ima_location" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 300"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/tv_price_for_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Price for one"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_price"
+                app:layout_constraintStart_toEndOf="@+id/tv_price"
+                app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

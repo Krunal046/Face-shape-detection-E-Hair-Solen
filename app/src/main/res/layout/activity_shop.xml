@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop">
+
+    <ImageView
+        android:id="@+id/img_shop"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shop_photo" />
+
+    <ImageButton
+        android:id="@+id/img_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_shop"
+        app:srcCompat="@drawable/ic_baseline_share_24" />
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_shop"
+        app:layout_constraintStart_toStartOf="@+id/img_shop"
+        app:layout_constraintTop_toBottomOf="@+id/img_share" />
+
+
+    <TextView
+        android:id="@+id/tv_shop_appointments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Appointments"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_shop_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_name" />
+
+    <TextView
+        android:id="@+id/tv_shop_address"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:text="SHOP NO 14 Natraj township  sayajiganj vadodara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_appointments" />
+
+    <TextView
+        android:id="@+id/tv_shop_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="AMBIENCE RATING"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_shop_address" />
+
+    <RatingBar
+        android:id="@+id/rb_shop_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_rating"
+        app:layout_constraintStart_toStartOf="@+id/tv_shop_rating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_rating" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#C5C5C5"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_address">
+
+
+        <ImageButton
+            android:id="@+id/btn_shop_call"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_call_24" />
+
+        <ImageButton
+            android:id="@+id/img_shop_review"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_rate_review_24" />
+
+        <ImageButton
+            android:id="@+id/img_shop_direction"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_directions_24" />
+
+        <TextView
+            android:id="@+id/tv_shop_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Call"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_shop_call"
+            app:layout_constraintStart_toStartOf="@+id/btn_shop_call"
+            app:layout_constraintTop_toBottomOf="@+id/btn_shop_call" />
+
+        <TextView
+            android:id="@+id/tv_shop_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Reviews"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_shop_review"
+            app:layout_constraintStart_toStartOf="@+id/img_shop_review"
+            app:layout_constraintTop_toBottomOf="@+id/img_shop_review" />
+
+        <TextView
+            android:id="@+id/tv_shop_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Direction"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_shop_direction"
+            app:layout_constraintStart_toStartOf="@+id/img_shop_direction"
+            app:layout_constraintTop_toBottomOf="@+id/img_shop_direction" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_shop_book_appointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="BOOK APPOINTMENT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_shop_departments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="DEPARTMENTS"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/tv_shop_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="SERVICES"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/tv_shop_department_hair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_departments"
+        app:layout_constraintStart_toStartOf="@+id/tv_shop_departments"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_departments" />
+
+    <TextView
+        android:id="@+id/tv_services_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MALE"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_services"
+        app:layout_constraintStart_toStartOf="@+id/tv_shop_services"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_services" />
+
+    <TextView
+        android:id="@+id/tv_shop_working_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="WORKING DAYS"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@+id/tv_shop_departments"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_department_hair" />
+
+    <TextView
+        android:id="@+id/tv_shop_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7 Days A Week"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_working_days"
+        app:layout_constraintStart_toStartOf="@+id/tv_shop_working_days"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_working_days" />
+
+    <TextView
+        android:id="@+id/tv_shop_timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="TIMING"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_services"
+        app:layout_constraintTop_toBottomOf="@+id/tv_services_male" />
+
+    <TextView
+        android:id="@+id/tv_shop_open_timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:00AM - 9:00PM"
+        app:layout_constraintEnd_toEndOf="@+id/tv_shop_timing"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shop_timing" />
+
+    <ImageButton
+        android:id="@+id/img_hair_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E3B62"
+        android:layout_marginBottom="@dimen/_20sdp"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        app:layout_constraintBottom_toTopOf="@+id/btn_shop_book_appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

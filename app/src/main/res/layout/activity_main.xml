@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/sp_lang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_border"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_change_lang"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="You can change the language at any time."
+        app:layout_constraintBottom_toTopOf="@+id/sp_lang"
+        app:layout_constraintEnd_toEndOf="@+id/sp_lang"
+        app:layout_constraintStart_toStartOf="@+id/sp_lang" />
+
+    <TextView
+        android:id="@+id/tv_select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select your Language"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_change_lang"
+        app:layout_constraintEnd_toEndOf="@+id/sp_lang"
+        app:layout_constraintStart_toStartOf="@+id/sp_lang" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:text="NEXT"
+        android:backgroundTint="#2E3B62"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_lang"
+        app:layout_constraintStart_toStartOf="@+id/sp_lang"
+        app:layout_constraintTop_toBottomOf="@+id/sp_lang" />
+
+    <ImageView
+        android:id="@+id/img_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_select_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgv" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="11dp"
+        android:layout_height="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_base"
+        app:layout_constraintEnd_toEndOf="@+id/img_base"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/img_base"
+        app:layout_constraintTop_toTopOf="@+id/img_base"
+        app:layout_constraintVertical_bias="0.228"
+        app:srcCompat="@drawable/circal" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/img_base"
+        app:layout_constraintEnd_toEndOf="@+id/img_base"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/img_base"
+        app:layout_constraintTop_toTopOf="@+id/img_base"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/mountain" />
+
+    <ImageView
+        android:id="@+id/img_wave1"
+        android:layout_width="0dp"
+        android:layout_height="129dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wave1" />
+
+    <ImageView
+        android:id="@+id/img_wave2"
+        android:layout_width="429dp"
+        android:layout_height="133dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/img_wave1"
+        app:layout_constraintEnd_toEndOf="@+id/img_wave1"
+        app:layout_constraintStart_toStartOf="@+id/img_wave1"
+        app:srcCompat="@drawable/wave2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

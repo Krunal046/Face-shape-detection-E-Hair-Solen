@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Temp">
+
+
+    <TextView
+        android:id="@+id/tv_barber_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barber Registration"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_barber_name"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Barber Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_barber_rv" />
+
+    <EditText
+        android:id="@+id/et_barber_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:inputType="textPersonName"
+        android:hint="Salon Address"
+        app:layout_constraintEnd_toEndOf="@+id/et_barber_name"
+        app:layout_constraintStart_toStartOf="@+id/et_barber_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_barber_name" />
+
+    <EditText
+        android:id="@+id/et_barber_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Phone Number"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_barber_address"
+        app:layout_constraintStart_toStartOf="@+id/et_barber_address"
+        app:layout_constraintTop_toBottomOf="@+id/et_barber_address" />
+
+    <EditText
+        android:id="@+id/et_salon_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Salon Timing"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_barber_phone_number"
+        app:layout_constraintStart_toStartOf="@+id/et_barber_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/et_barber_phone_number" />
+
+    <EditText
+        android:id="@+id/et_working_days"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Working Days"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_salon_time"
+        app:layout_constraintStart_toStartOf="@+id/et_salon_time"
+        app:layout_constraintTop_toBottomOf="@+id/et_salon_time" />
+
+    <Button
+        android:id="@+id/btn_barber_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

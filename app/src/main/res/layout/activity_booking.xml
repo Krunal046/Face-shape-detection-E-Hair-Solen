@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_moring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Moring Slot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_900"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="09:00"
+                app:layout_constraintStart_toStartOf="@+id/tv_moring"
+                app:layout_constraintTop_toBottomOf="@+id/tv_moring" />
+
+            <Button
+                android:id="@+id/btn_915"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="09:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_900"
+                app:layout_constraintStart_toEndOf="@+id/btn_900"
+                app:layout_constraintTop_toTopOf="@+id/btn_900" />
+
+            <Button
+                android:id="@+id/btn_930"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="09:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_915"
+                app:layout_constraintStart_toEndOf="@+id/btn_915"
+                app:layout_constraintTop_toTopOf="@+id/btn_915" />
+
+            <Button
+                android:id="@+id/btn_945"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="09:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_930"
+                app:layout_constraintStart_toEndOf="@+id/btn_930"
+                app:layout_constraintTop_toTopOf="@+id/btn_930" />
+
+            <Button
+                android:id="@+id/btn_1000"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="10:00"
+                app:layout_constraintStart_toStartOf="@+id/btn_900"
+                app:layout_constraintTop_toBottomOf="@+id/btn_900" />
+
+            <Button
+                android:id="@+id/btn_1015"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="10:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1000"
+                app:layout_constraintStart_toEndOf="@+id/btn_1000"
+                app:layout_constraintTop_toTopOf="@+id/btn_1000" />
+
+            <Button
+                android:id="@+id/btn_1030"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="10:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1015"
+                app:layout_constraintStart_toEndOf="@+id/btn_1015"
+                app:layout_constraintTop_toTopOf="@+id/btn_1015" />
+
+            <Button
+                android:id="@+id/btn_1045"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="10:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1030"
+                app:layout_constraintStart_toEndOf="@+id/btn_1030"
+                app:layout_constraintTop_toTopOf="@+id/btn_1030" />
+
+            <Button
+                android:id="@+id/btn_1100"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="11:00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/btn_1000"
+                app:layout_constraintTop_toBottomOf="@+id/btn_1000" />
+
+            <Button
+                android:id="@+id/btn_1115"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="11:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1100"
+                app:layout_constraintStart_toEndOf="@+id/btn_1100"
+                app:layout_constraintTop_toTopOf="@+id/btn_1100" />
+
+            <Button
+                android:id="@+id/btn_1130"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="11:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1115"
+                app:layout_constraintStart_toEndOf="@+id/btn_1115"
+                app:layout_constraintTop_toTopOf="@+id/btn_1115" />
+
+            <Button
+                android:id="@+id/btn_1145"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="11:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1130"
+                app:layout_constraintStart_toEndOf="@+id/btn_1130"
+                app:layout_constraintTop_toTopOf="@+id/btn_1130"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/cd_time"
+        app:layout_constraintStart_toStartOf="@+id/cd_time"
+        app:layout_constraintTop_toBottomOf="@+id/cd_time" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_afternoon_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Afternoon Slot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_1200"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="12:00"
+                app:layout_constraintStart_toStartOf="@+id/tv_afternoon_slot"
+                app:layout_constraintTop_toBottomOf="@+id/tv_afternoon_slot" />
+
+            <Button
+                android:id="@+id/btn_1215"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="12:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1200"
+                app:layout_constraintStart_toEndOf="@+id/btn_1200"
+                app:layout_constraintTop_toTopOf="@+id/btn_1200" />
+
+            <Button
+                android:id="@+id/btn_1230"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="12:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1215"
+                app:layout_constraintStart_toEndOf="@+id/btn_1215"
+                app:layout_constraintTop_toTopOf="@+id/btn_1215" />
+
+            <Button
+                android:id="@+id/btn_1245"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="12:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1230"
+                app:layout_constraintStart_toEndOf="@+id/btn_1230"
+                app:layout_constraintTop_toTopOf="@+id/btn_1230" />
+
+            <Button
+                android:id="@+id/btn_1300"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="13:00"
+                app:layout_constraintStart_toStartOf="@+id/btn_1200"
+                app:layout_constraintTop_toBottomOf="@+id/btn_1200" />
+
+            <Button
+                android:id="@+id/btn_1315"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="13:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1300"
+                app:layout_constraintStart_toEndOf="@+id/btn_1300"
+                app:layout_constraintTop_toTopOf="@+id/btn_1300" />
+
+            <Button
+                android:id="@+id/btn_1330"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="13:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1315"
+                app:layout_constraintStart_toEndOf="@+id/btn_1315"
+                app:layout_constraintTop_toTopOf="@+id/btn_1315" />
+
+            <Button
+                android:id="@+id/btn_1345"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="13:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1330"
+                app:layout_constraintStart_toEndOf="@+id/btn_1330"
+                app:layout_constraintTop_toTopOf="@+id/btn_1330" />
+
+            <Button
+                android:id="@+id/btn_1400"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="14:00"
+                app:layout_constraintStart_toStartOf="@+id/btn_1300"
+                app:layout_constraintTop_toBottomOf="@+id/btn_1300" />
+
+            <Button
+                android:id="@+id/btn_1415"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="14:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1400"
+                app:layout_constraintStart_toEndOf="@+id/btn_1400"
+                app:layout_constraintTop_toTopOf="@+id/btn_1400" />
+
+            <Button
+                android:id="@+id/btn_1430"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="14:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1415"
+                app:layout_constraintStart_toEndOf="@+id/btn_1415"
+                app:layout_constraintTop_toTopOf="@+id/btn_1415" />
+
+            <Button
+                android:id="@+id/btn_1445"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="14:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1430"
+                app:layout_constraintStart_toEndOf="@+id/btn_1430"
+                app:layout_constraintTop_toTopOf="@+id/btn_1430" />
+
+            <Button
+                android:id="@+id/btn_1500"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="15:00"
+                app:layout_constraintStart_toStartOf="@+id/btn_1400"
+                app:layout_constraintTop_toBottomOf="@+id/btn_1400" />
+
+            <Button
+                android:id="@+id/btn_1515"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="15:15"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1500"
+                app:layout_constraintStart_toEndOf="@+id/btn_1500"
+                app:layout_constraintTop_toTopOf="@+id/btn_1500" />
+
+            <Button
+                android:id="@+id/btn_1530"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="15:30"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1515"
+                app:layout_constraintStart_toEndOf="@+id/btn_1515"
+                app:layout_constraintTop_toTopOf="@+id/btn_1515" />
+
+            <Button
+                android:id="@+id/btn_1545"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="15:45"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_1530"
+                app:layout_constraintStart_toEndOf="@+id/btn_1530"
+                app:layout_constraintTop_toTopOf="@+id/btn_1530" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
